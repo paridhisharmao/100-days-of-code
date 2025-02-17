@@ -1,0 +1,14 @@
+# 1. greating
+# 2.total bill input
+# 3. how much percentage tip will you like?
+# 4.how many people is splitting the bill
+# 5. each person should pay
+
+print("welcome to the tip calculator!")
+bill = float(input("enter the total bill please- "))
+perc =int(input("how much percentage tip would you like to pay?10,12,15? "))
+per_bill = (((perc)/(bill))*100)
+total_people= int(input("enter the number of people- "))
+each_per_pay=(((bill)+(per_bill))/(total_people))
+final_am = round(each_per_pay,2)
+print(f"each person should pay {final_am}")
